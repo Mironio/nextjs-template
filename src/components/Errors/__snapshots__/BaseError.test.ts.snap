@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`should match snapshot 1`] = `
+<div
+  className="mt-24"
+>
+  <ForwardRef
+    alt="Exclamation Sign"
+    className="mx-auto mb-8"
+    priority={true}
+    src="/public/images/exclamation.svg"
+  />
+  <Headline
+    classNames="mb-6 text-center"
+  >
+    Sorry something went wrong
+  </Headline>
+</div>
+`;

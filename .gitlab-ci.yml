@@ -1,0 +1,33 @@
+#build:
+#  image: node:20-alpine
+#  stage: build
+#  before_script:
+#    - npm cache clean --force
+#    - if [ "$BETA" = true ]; then apt-get update && apt install -y jq; fi
+#  script:
+#    - npm ci
+#    - npm run test
+#    - echo "export default '$VERSION_NUMBER';" > src/app/info.ts
+#    - npm run build
+#  allow_failure: false
+#  artifacts:
+#    paths:
+#      - .next
+#      - public
+#
+#dockerize:
+#  stage: dockerize
+#  extends: .build-docker-template
+#  dependencies:
+#    - build
+#  artifacts:
+#    name: "scan_artifacts"
+#    paths:
+#      - ./
+#    exclude:
+#      - .m2*
+#      - .m2/**/*
+#      - .git*
+#      - .git/**/*
+#    when: on_success
+#    expire_in: 1 hour

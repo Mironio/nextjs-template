@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* colors */
+    --pq-95-black: #0D0D0D; /* base font color */
+    --pq-indigo: #1B3B6A; /* used for headlines */
+  }
+}
+
+body {
+  color: var(--pq-95-black)
+}

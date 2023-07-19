@@ -1,0 +1,10 @@
+Dockerfile*
+.dockerignore
+npm-debug.log
+README.md
+.git
+.jest_cache
+.docker-compose
+.vscode
+.terraform
+.husky

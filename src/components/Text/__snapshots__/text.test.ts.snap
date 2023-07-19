@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`should match snapshot 1`] = `
+<h3
+  className="vitest-1 text-2xl font-bold text-pq-indigo"
+>
+  children
+</h3>
+`;
+
+exports[`should match snapshot 2`] = `
+<h1
+  className="vitest-1 mb-6 text-[32px] font-bold text-pq-indigo"
+>
+  children
+</h1>
+`;
